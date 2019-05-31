@@ -2,7 +2,7 @@
   "name": "myangelneptune",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myangelneptune.github.io/",
+  "homepage": "https://myangelneptune.github.io/MyAngelNeptune/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
