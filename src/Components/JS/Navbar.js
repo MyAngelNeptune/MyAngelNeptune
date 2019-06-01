@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
-import Home from './Home';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
+import '../CSS/Navbar.css';
 
 class Navbar extends Component {
+	redirect(e, route) {
+		e.preventDefault();
+		window.location.assign(route);
+	}
+
 	render(){
 		return(
-			<Router>
-
-			</Router>
+			<ul className="NavButtons">
+				<li><a href="/">Home</a></li>
+				<li><a href="/Neptune">Neptune</a></li>
+			</ul>
 		)
 	}
 

@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import Navbar from './Navbar.js';
+import '../CSS/Home.css';
+import Nep from '../Images/n1005.png';
 
 class Home extends Component {
   render() {
     return (
-        <div>
-          <h2>Home</h2>
+        <div className='Home'>
+        	<div className='boxCenter'>
+						<h1 className='Me'>
+						 	<img src = {Nep} />
+					 	</h1>
+						<h2> hi </h2>
+					</div>
         </div>
     );
   }
