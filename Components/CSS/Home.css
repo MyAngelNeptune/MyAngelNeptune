@@ -1,0 +1,38 @@
+.Home {
+
+	background-image: url("../Images/wall12.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+
+}
+
+.Home .boxCenter {
+	background-color: #FCE9FF;
+	border-radius: 15px;
+	margin: auto;
+  width: 45%;
+  border: 4px solid pink;
+  padding: 10px;
+}
+
+.Home .boxCenter .Me img {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+	height:25%;
+}
+
+@keyframes img-ani {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
