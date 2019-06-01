@@ -1,0 +1,43 @@
+#Navbar {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 10px;
+  overflow: hidden;
+  border-bottom: 2px inset gray;
+  background-image: linear-gradient(to top, #AC88FF, #824CFF);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+li {
+  float: left;
+}
+
+#Navbar #logo {
+  padding-right: 10px;
+}
+#Navbar #Neptune {
+  display: block;
+  font-weight: bold;
+
+  color: black;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#Navbar #Neptune:hover {
+  background-color: #93D2FF;
+}
+
+
+
+body {
+  background-image: url("../Images/Wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}

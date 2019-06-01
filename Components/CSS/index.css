@@ -6,7 +6,7 @@
   padding-left: 10px;
   overflow: hidden;
   border-bottom: 2px inset gray;
-  background-image: linear-gradient(to top, #AC88FF, #824CFF);
+  background-image: linear-gradient(to top, #AC88FF, #C785DC);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -52,25 +52,26 @@ li {
 	background-color: #FCE9FF;
 	border-radius: 15px;
 	margin: auto;
-  width: 45%;
-  height: 45%
+  width: 25%;
+  height: 75%
   padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #474646;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #Home #boxCenter #Me img {
 	display: block;
   margin-left: auto;
   margin-right: auto;
-  width:25%;
-	height:25%;
+  width: 45%;
+	height: 45%;
 }
 
 #Home #boxCenter h2 {
-  font-weight: bold;
 
-  color: #474646;
-  text-align: center;
-  vertical-align: middle;
   line-height: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -80,11 +81,16 @@ li {
 #Home #boxCenter h3 {
   font-weight: bold;
   color: #474646;
-  text-align: center;
-  vertical-align: middle;
   line-height: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#Home #boxCenter #Resume {
+  font-size: 28px;
+  text-decoration-line: underline;
+
+
 }
 
 @-webkit-keyframes fadeIn {
