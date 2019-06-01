@@ -10,8 +10,8 @@ class Navbar extends Component {
 	render(){
 		return(
 			<ul className="NavButtons">
-				<li><a href="/">Home</a></li>
-				<li><a href="/Neptune">Neptune</a></li>
+				<li><a href="MyAngelNeptune/">Home</a></li>
+				<li><a href="MyAngelNeptune/Neptune">Neptune</a></li>
 			</ul>
 		)
 	}
