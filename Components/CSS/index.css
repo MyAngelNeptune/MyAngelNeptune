@@ -1,10 +1,12 @@
-ul {
+#Navbar {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 10px;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #F3E0F9;
+  border-bottom: 2px inset gray;
+  background-image: linear-gradient(to top, #AC88FF, #824CFF);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -13,20 +15,26 @@ li {
   float: left;
 }
 
-li a {
+#Navbar #logo {
+  padding-right: 10px;
+}
+#Navbar #Neptune {
   display: block;
+  font-weight: bold;
+
   color: black;
-  padding: 14px 16px;
+  padding: 20px 30px;
   text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+#Navbar #Neptune:hover {
   background-color: #93D2FF;
 }
 
 
 #Home {
+  font-family: "Courier New", Courier, monospace;
 	min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,14 +46,14 @@ li a:hover {
 
 #Home #boxCenter {
   display: block;
-  -webkit-animation: fadeIn 5s;
-  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+  opacity: 0.9;
 	background-color: #FCE9FF;
 	border-radius: 15px;
 	margin: auto;
   width: 45%;
   height: 45%
-  border: 4px solid pink;
   padding: 10px;
 }
 
@@ -58,33 +66,41 @@ li a:hover {
 }
 
 #Home #boxCenter h2 {
+  font-weight: bold;
+
+  color: #474646;
   text-align: center;
   vertical-align: middle;
-  line-height: 90px;
+  line-height: 30px;
   margin-left: auto;
   margin-right: auto;
+}
 
+
+#Home #boxCenter h3 {
+  font-weight: bold;
+  color: #474646;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @-webkit-keyframes fadeIn {
     from { opacity: 0; }
-      to { opacity: 1; }
+      to { opacity: 0.9; }
 }
 @keyframes fadeIn {
     from { opacity: 0; }
-      to { opacity: 1; }
+      to { opacity: 0.9; }
 }
 
 
 body {
-  background-image: url("../Images/wall12.png");
+  background-image: url("../Images/Wallpaper.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
