@@ -1,37 +1,5 @@
-#Navbar {
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  list-style-type: none;
-  margin: 0;
-  padding-left: 10px;
-  overflow: hidden;
-  border-bottom: 2px inset gray;
-  background-image: linear-gradient(to top, #AC88FF, #C785DC);
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-li {
-  float: left;
-}
 
-#Navbar #logo {
-  padding-right: 10px;
-}
-#Navbar #Neptune {
-  display: block;
-  font-weight: bold;
-
-  color: black;
-  padding: 20px 30px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-#Navbar #Neptune:hover {
-  background-color: #93D2FF;
-}
-
+@import "Navbar.css";
 
 #Home {
   font-family: "Courier New", Courier, monospace;
@@ -53,10 +21,10 @@ li {
 	border-radius: 15px;
 	margin: auto;
   width: 25%;
-  height: 75%
+  height: 45%
   padding: 10px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 0.85em;
   color: #474646;
   text-align: center;
   vertical-align: middle;
@@ -87,10 +55,15 @@ li {
 }
 
 #Home #boxCenter #Resume {
-  font-size: 28px;
   text-decoration-line: underline;
+}
 
-
+#ImageLinks img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
 }
 
 @-webkit-keyframes fadeIn {
