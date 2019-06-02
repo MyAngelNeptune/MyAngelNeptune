@@ -1,0 +1,66 @@
+
+@import "Navbar.css";
+
+#boxCenter {
+	margin-top: 100px;
+  display: block;
+  opacity: 0.9;
+	background-color: #FCE9FF;
+	border-radius: 15px;
+	margin-left:auto;
+	margin-right:auto;
+  width: 25%;
+  height: 45%;
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #474646;
+  text-align: center;
+  vertical-align: middle;
+}
+#passHeader {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #474646;
+	margin: auto;
+
+}
+
+#formInput[type=text] {
+	background-color: #EEDEF7;
+}
+
+#formInput[type=text]:focus {
+	background-color: lightblue;
+	color:black
+}
+
+#formButtons[type=submit] {
+	padding: 2px 16px;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: 550;
+
+	background-color: #f4511e;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+#formButtons[type=submit]:hover{
+	{opacity: 1}
+}
+body {
+  background-image: url("../Images/Wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
