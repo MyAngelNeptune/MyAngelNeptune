@@ -2,13 +2,7 @@
 
 
 
-#NeptuneGifs{
-  display: none;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 65%;
-  padding-bottom: 1000px;
-}
+
 
 #NeptuneSounds{
   display: none;
@@ -96,6 +90,43 @@
 
 }
 
+#NeptuneGifs {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+#gifs {
+  background: #FCE9FF;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1vh;
+  margin-bottom: 13vh;
+  border-radius: 105px;
+}
+
+#gifs li {
+  padding: 0px;
+  width: 25%;
+  background-color: #E0A8F5;
+  display: flex;
+  border-radius: 15vh;
+  align-items: center;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-left: 4%;
+}
+
+#gifs li img {
+  width: 85%;
+  height: 85%;
+  border-radius: 15vh;
+  padding: 7.5% 7.5%;
+}
 .innerBody{
   position: absolute;
   font-weight: bold;
