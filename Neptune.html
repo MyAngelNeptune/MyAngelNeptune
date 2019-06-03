@@ -1,20 +1,172 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 
+<script>
+
+//Checks if pics is on
+function togglePics() {
+  var nepPics = document.getElementById("NeptunePics");
+	var nepGifs = document.getElementById("NeptuneGifs");
+	var nepSounds = document.getElementById("NeptuneSounds");
+
+	var isPicsOff = new Boolean(nepGifs.style.display === "none");
+
+	nepPics.style.display = isPicsOff ? "flex" : "none";
+	nepGifs.style.display = isPicsOff ? "none" : "none";
+	nepSounds.style.display = isPicsOff ? "none" : "none";
+
+}
+
+//Checks if gifs is on
+function toggleGifs() {
+	var nepPics = document.getElementById("NeptunePics");
+	var nepGifs = document.getElementById("NeptuneGifs");
+	var nepSounds = document.getElementById("NeptuneSounds");
+
+	var isGifsOff = new Boolean(nepGifs.style.display === "none");
+	nepPics.style.display = isGifsOff ? "none" : "none";
+	nepGifs.style.display = isGifsOff ? "flex" : "none";
+	nepSounds.style.display = isGifsOff ? "none" : "none";
+}
+
+//Checks if sounds is on
+function toggleSounds() {
+	var nepPics = document.getElementById("NeptunePics");
+	var nepGifs = document.getElementById("NeptuneGifs");
+	var nepSounds = document.getElementById("NeptuneSounds");
+
+	var isSoundsOff = new Boolean(nepSounds.style.display === "none");
+	nepPics.style.display = isSoundsOff ? "none" : "none";
+	nepGifs.style.display = isSoundsOff ? "none" : "none";
+	nepSounds.style.display = isSoundsOff ? "flex" : "none";
+}
+</script>
+
 <html>
 	<head>
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="./Components/JS/Neptune.js" type="text/javascript"></script>
 		<link rel='icon' href='./Components/Images/favicon.ico' type='image/x-icon'/ >
-		<link rel="stylesheet" href="./Components/CSS/index.css">
+		<link rel="stylesheet" href="./Components/CSS/Neptune.css">
 		 <title>MyAngelNeptune</title>
 	</head>
 	<body>
-		<ul id="Navbar">
-			<li id="logo"><a href="index.html"> <img src="./Components/Images/n728t.png" width=50 height=50></a></li>
-			<li id="Neptune"><a href="checkPassword.html">Neptune</a></li>
-		</ul>
+    <ul id="Navbar">
+      <li id="logo"><a href="index.html"> <img src="./Components/Images/n728t.png" width=50 height=50></a></li>
+      <li id="Neptune"><a href="checkPassword.html">Neptune</a></li>
+    </ul>
 		<div id="Home">
-			<img src="./Components/Images/neko.png"
+			<button class="buttons" onclick="togglePics()">Pics</button>
+				<div class="innerBody" id="NeptunePics">
+					<ul id="pics">
+            <li> <img src="./Components/Images/n1.png" alt=""></li>
+            <li> <img src="./Components/Images/n2.png" alt=""></li>
+            <li> <img src="./Components/Images/n3.jpg" alt=""></li>
+            <li> <img src="./Components/Images/n4.jpg" alt=""></li>
+            <li> <img src="./Components/Images/n5.jpg" alt=""></li>
+            <li> <img src="./Components/Images/n6.jpg" alt=""></li>
+            <li> <img src="./Components/Images/n7.png" alt=""></li>
+            <li> <img src="./Components/Images/n8.png" alt=""></li>
+            <li> <img src="./Components/Images/n9.jpg" alt=""></li>
+            <li> <img src="./Components/Images/n10.png" alt=""></li>
+            <li> <img src="./Components/Images/n11.png" alt=""></li>
+            <li> <img src="./Components/Images/n12.png" alt=""></li>
+            <li> <img src="./Components/Images/n13.png" alt=""></li>
+            <li> <img src="./Components/Images/n14.png" alt=""></li>
+            <li> <img src="./Components/Images/n15.png" alt=""></li>
+            <li> <img src="./Components/Images/n16.png" alt=""></li>
+            <li> <img src="./Components/Images/n17.png" alt=""></li>
+            <li> <img src="./Components/Images/n18.png" alt=""></li>
+            <li> <img src="./Components/Images/n19.jpg" alt=""></li>
+            <li> <img src="./Components/Images/n20.jpg" alt=""></li>
+            <li> <img src="./Components/Images/n21.png" alt=""></li>
+            <li> <img src="./Components/Images/n22.png" alt=""></li>
+            <li> <img src="./Components/Images/n23.png" alt=""></li>
+            <li> <img src="./Components/Images/n24.png" alt=""></li>
+            <li> <img src="./Components/Images/n25.png" alt=""></li>
+            <li> <img src="./Components/Images/n26.png" alt=""></li>
+            <li> <img src="./Components/Images/n27.png" alt=""></li>
+            <li> <img src="./Components/Images/n28.png" alt=""></li>
+            <li> <img src="./Components/Images/n29.png" alt=""></li>
+            <li> <img src="./Components/Images/n30.png" alt=""></li>
+            <li> <img src="./Components/Images/n31.png" alt=""></li>
+            <li> <img src="./Components/Images/n32.png" alt=""></li>
+            <li> <img src="./Components/Images/n33.png" alt=""></li>
+            <li> <img src="./Components/Images/n34.png" alt=""></li>
+            <li> <img src="./Components/Images/n35.png" alt=""></li>
+            <li> <img src="./Components/Images/n36.png" alt=""></li>
+            <li> <img src="./Components/Images/n37.png" alt=""></li>
+            <li> <img src="./Components/Images/n38.png" alt=""></li>
+            <li> <img src="./Components/Images/n39.png" alt=""></li>
+            <li> <img src="./Components/Images/n40.png" alt=""></li>
+            <li> <img src="./Components/Images/n41.png" alt=""></li>
+            <li> <img src="./Components/Images/n42.png" alt=""></li>
+            <li> <img src="./Components/Images/n43.png" alt=""></li>
+            <li> <img src="./Components/Images/n45.png" alt=""></li>
+            <li> <img src="./Components/Images/n46.png" alt=""></li>
+            <li> <img src="./Components/Images/n47.png" alt=""></li>
+            <li> <img src="./Components/Images/n48.png" alt=""></li>
+            <li> <img src="./Components/Images/n49.png" alt=""></li>
+            <li> <img src="./Components/Images/n50.png" alt=""></li>
+            <li> <img src="./Components/Images/n51.png" alt=""></li>
+            <li> <img src="./Components/Images/n52.png" alt=""></li>
+            <li> <img src="./Components/Images/n53.png" alt=""></li>
+            <li> <img src="./Components/Images/n54.png" alt=""></li>
+            <li> <img src="./Components/Images/n55.png" alt=""></li>
+            <li> <img src="./Components/Images/n56.png" alt=""></li>
+            <li> <img src="./Components/Images/n57.png" alt=""></li>
+            <li> <img src="./Components/Images/n58.png" alt=""></li>
+            <li> <img src="./Components/Images/n59.png" alt=""></li>
+            <li> <img src="./Components/Images/n60.png" alt=""></li>
+            <li> <img src="./Components/Images/n61.png" alt=""></li>
+            <li> <img src="./Components/Images/n62.png" alt=""></li>
+            <li> <img src="./Components/Images/n63.png" alt=""></li>
+            <li> <img src="./Components/Images/n64.png" alt=""></li>
+            <li> <img src="./Components/Images/n65.png" alt=""></li>
+            <li> <img src="./Components/Images/n66.png" alt=""></li>
+            <li> <img src="./Components/Images/n67.png" alt=""></li>
+            <li> <img src="./Components/Images/n68.png" alt=""></li>
+            <li> <img src="./Components/Images/n69.png" alt=""></li>
+            <li> <img src="./Components/Images/n70.png" alt=""></li>
+            <li> <img src="./Components/Images/n71.png" alt=""></li>
+            <li> <img src="./Components/Images/n72.png" alt=""></li>
+            <li> <img src="./Components/Images/n73.png" alt=""></li>
+            <li> <img src="./Components/Images/n74.png" alt=""></li>
+            <li> <img src="./Components/Images/n75.png" alt=""></li>
+            <li> <img src="./Components/Images/n76.png" alt=""></li>
+            <li> <img src="./Components/Images/n77.png" alt=""></li>
+            <li> <img src="./Components/Images/n78.png" alt=""></li>
+            <li> <img src="./Components/Images/n79.png" alt=""></li>
+            <li> <img src="./Components/Images/n80.png" alt=""></li>
+            <li> <img src="./Components/Images/n81.png" alt=""></li>
+            <li> <img src="./Components/Images/n82.png" alt=""></li>
+            <li> <img src="./Components/Images/n83.png" alt=""></li>
+            <li> <img src="./Components/Images/n84.png" alt=""></li>
+            <li> <img src="./Components/Images/n85.png" alt=""></li>
+            <li> <img src="./Components/Images/n86.png" alt=""></li>
+            <li> <img src="./Components/Images/n87.png" alt=""></li>
+            <li> <img src="./Components/Images/n88.png" alt=""></li>
+            <li> <img src="./Components/Images/n89.png" alt=""></li>
+            <li> <img src="./Components/Images/n90.png" alt=""></li>
+            <li> <img src="./Components/Images/n91.png" alt=""></li>
+            <li> <img src="./Components/Images/n92.png" alt=""></li>
+            <li> <img src="./Components/Images/n93.png" alt=""></li>
+            <li> <img src="./Components/Images/n94.png" alt=""></li>
+            <li> <img src="./Components/Images/n95.png" alt=""></li>
+            <li> <img src="./Components/Images/n96.png" alt=""></li>
+            <li> <img src="./Components/Images/n97.png" alt=""></li>
+            <li> <img src="./Components/Images/n98.png" alt=""></li>
+            <li> <img src="./Components/Images/n99.png" alt=""></li>
+            <li> <img src="./Components/Images/n100.png" alt=""></li>
+          </ul>
+				</div>
+			<button class="buttons" onclick="toggleGifs()">Gifs</button>
+				<div class="innerBody" id="NeptuneGifs">
+					GIFS
+				</div>
+			<button class="buttons" onclick="toggleSounds()">Sounds</button>
+				<div class="innerBody" id="NeptuneSounds">
+					SaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaNDS
+				</div>
 		</div>
 	</body>
 </html>

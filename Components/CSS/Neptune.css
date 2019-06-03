@@ -1,38 +1,92 @@
-#Navbar {
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
+@import "Navbar.css";
+
+#NeptunePics{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 65%;
+  padding-bottom: 1000px;
+
+}
+
+#NeptuneGifs{
+  display: none;
+}
+
+#NeptuneSounds{
+  display: none;
+}
+
+#Home
+{
   list-style-type: none;
-  margin: 0;
-  padding-left: 10px;
-  overflow: hidden;
-  border-bottom: 2px inset gray;
-  background-image: linear-gradient(to top, #AC88FF, #824CFF);
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-li {
-  float: left;
-}
-
-#Navbar #logo {
-  padding-right: 10px;
-}
-#Navbar #Neptune {
-  display: block;
+  padding-top:100px;
+  padding-bottom: 25500px;
+  display: inline-block;
+  background-color: #FCE9FF;
+  border-radius: 105px;
+  margin-top:100px;
+  margin-left:auto;
+  margin-right: auto;
+  width: 65%;
+  height: 45%;
   font-weight: bold;
-
-  color: black;
-  padding: 20px 30px;
-  text-decoration: none;
+  font-size: 1.05em;
+  color: #474646;
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
-/* Change the link color to #111 (black) on hover */
-#Navbar #Neptune:hover {
-  background-color: #93D2FF;
+.buttons
+{
+  display: inline-block;
+  opacity: 0.9;
+	background-color: #FCE9FF;
+	border-radius: 15px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 20%;
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #474646;
 }
 
 
+#pics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+margin-right: auto;
+}
+
+#pics li{
+  width: 28%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3.5%;
+  margin-bottom: 3.5%;
+
+}
+
+#pics li img{
+  width: 90%;
+  height: 90%;
+  padding: 5% 5%;
+
+}
+
+.innerBody{
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.05em;
+  margin-top: 100px;
+}
 
 body {
   background-image: url("../Images/Wallpaper.jpg");
