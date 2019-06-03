@@ -1,34 +1,34 @@
 @import "Navbar.css";
 
-#NeptunePics{
-  display: flex;
+
+
+#NeptuneGifs{
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
   width: 65%;
   padding-bottom: 1000px;
-
-}
-
-#NeptuneGifs{
-  display: none;
 }
 
 #NeptuneSounds{
   display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 65%;
+  padding-bottom: 1000px;
 }
 
 #Home
 {
   list-style-type: none;
-  padding-top:100px;
-  padding-bottom: 25500px;
   display: inline-block;
   background-color: #FCE9FF;
   border-radius: 105px;
   margin-top:100px;
+
   margin-left:auto;
-  margin-right: auto;
-  width: 65%;
+  margin-right:auto;
+  width: 75%;
   height: 45%;
   font-weight: bold;
   font-size: 1.05em;
@@ -37,6 +37,8 @@
   list-style-type: none;
   display: flex;
   flex-direction: row;
+
+
 }
 
 .buttons
@@ -47,7 +49,6 @@
 	border-radius: 15px;
   margin: auto;
   padding-top: 10px;
-  padding-bottom: 10px;
   width: 20%;
   font-weight: bold;
   font-size: 1.05em;
@@ -55,29 +56,43 @@
 }
 
 
-#pics {
+#NeptunePics{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: auto;
-margin-right: auto;
+  width: 75%;
+}
+
+#pics {
+  background: #FCE9FF;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1vh;
+  margin-bottom: 13vh;
+  border-radius: 105px;
 }
 
 #pics li{
-  width: 28%;
-  background-color: #FFFFFF;
+  padding: 0px;
+  width: 25%;
+  background-color: #E0A8F5;
   display: flex;
-  justify-content: center;
+  border-radius: 15vh;
   align-items: center;
-  margin-left: 3.5%;
-  margin-bottom: 3.5%;
-
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-left: 4%;
 }
 
 #pics li img{
-  width: 90%;
-  height: 90%;
-  padding: 5% 5%;
+
+  width: 85%;
+  height: 85%;
+  border-radius: 15vh;
+  padding: 7.5% 7.5%;
 
 }
 
@@ -85,7 +100,7 @@ margin-right: auto;
   position: absolute;
   font-weight: bold;
   font-size: 1.05em;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 body {
