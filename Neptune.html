@@ -58,6 +58,22 @@ function toggleSounds() {
 			<button class="buttons" onclick="togglePics()">Pics</button>
 				<div class="innerBody" id="NeptunePics">
 					<ul id="pics">
+            <script>
+              var url = "";
+              var urlList = [];
+              var i;
+              for (i = 1; i < 101; i++){
+                url = "./Components/Images/n" + i + ".png";
+                urlList.push(url);
+              }
+
+              var newImages = '';
+              for (i = 0; i < urlList.length; i++){
+                newImages += '<li> <img src="' + urlList[i] + '" alt=""'></li>;
+              }
+            </script>
+
+            <!--
             <li> <img src="./Components/Images/n1.png" alt=""></li>
             <li> <img src="./Components/Images/n2.png" alt=""></li>
             <li> <img src="./Components/Images/n3.jpg" alt=""></li>
@@ -157,6 +173,8 @@ function toggleSounds() {
             <li> <img src="./Components/Images/n98.png" alt=""></li>
             <li> <img src="./Components/Images/n99.png" alt=""></li>
             <li> <img src="./Components/Images/n100.png" alt=""></li>
+            -->
+
           </ul>
 				</div>
 			<button class="buttons" onclick="toggleGifs()">Gifs</button>
