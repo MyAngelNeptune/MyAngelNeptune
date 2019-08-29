@@ -29,7 +29,7 @@ function togglePics() {
   }
 
   var newImages = '';
-  for (i = 0; i < urlList.length; i++){
+  for (i = urlList.length - 1; i >= 0; i--){
     newImages = '<li> <img src="' + urlList[i] + '" alt=""></li>';
     container.insertAdjacentHTML('afterbegin', newImages);
   }
@@ -76,7 +76,7 @@ function toggleSounds() {
 			<button class="buttons" onclick="togglePics()">Pics</button>
 				<div class="innerBody" id="NeptunePics">
 					<ul id="pics">
-            hi
+
           </ul>
 				</div>
 			<button class="buttons" onclick="toggleGifs()">Gifs</button>
