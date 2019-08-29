@@ -3,6 +3,10 @@
 
 <script>
 
+  function loopImages() {
+
+  }
+
 //Checks if pics is on
 function togglePics() {
   var nepPics = document.getElementById("NeptunePics");
@@ -15,6 +19,20 @@ function togglePics() {
 	nepGifs.style.display = isPicsOff ? "none" : "none";
 	nepSounds.style.display = isPicsOff ? "none" : "none";
 
+  var container = document.getElementById("pics");
+  var url = "";
+  var urlList = [];
+  var i;
+  for (i = 1; i < 103; i++){
+    url = "./Components/Images/n" + i + ".png";
+    urlList.push(url);
+  }
+
+  var newImages = '';
+  for (i = 0; i < urlList.length; i++){
+    newImages = '<li> <img src="' + urlList[i] + '" alt=""></li>';
+    container.insertAdjacentHTML('afterbegin', newImages);
+  }
 }
 
 //Checks if gifs is on
@@ -58,20 +76,6 @@ function toggleSounds() {
 			<button class="buttons" onclick="togglePics()">Pics</button>
 				<div class="innerBody" id="NeptunePics">
 					<ul id="pics">
-            <script>
-              var url = "";
-              var urlList = [];
-              var i;
-              for (i = 1; i < 101; i++){
-                url = "./Components/Images/n" + i + ".png";
-                urlList.push(url);
-              }
-
-              var newImages = '';
-              for (i = 0; i < urlList.length; i++){
-                newImages += '<li> <img src="' + urlList[i] + '" alt=""'></li>;
-              }
-            </script>
 
             <!--
             <li> <img src="./Components/Images/n1.png" alt=""></li>
