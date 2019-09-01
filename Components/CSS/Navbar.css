@@ -1,3 +1,5 @@
+@import "nightMode.css";
+
 #Navbar {
   z-index: 500;
   font-family: "Courier New", Courier, monospace;
@@ -11,6 +13,8 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  font-size: 150%;
+
 }
 li {
   float: left;
@@ -31,4 +35,11 @@ li {
 /* Change the link color to #111 (black) on hover */
 #Navbar #Neptune:hover {
   background-color: #93D2FF;
+}
+
+.dark,
+.dark * {
+    background-image: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
 }

@@ -3,23 +3,107 @@
 
 <script>
 
-  function loopImages() {
+function loopImages() {
+  /*
+  var picsContainer = document.getElementById("pics");
+  var bigPicsContainer = document.getElementById("gifs");
+  var gifsContainer = document.getElementById("bigPics");
 
+  var url = "";
+  var picList = [];
+  var gifList = [];
+  var bigPicList = [];
+
+  var i;
+  */
+  var nepPics = document.getElementById("NeptunePics");
+  var bigPics = document.getElementById("BigNepPics");
+  var nepPics = document.getElementById("NeptuneGifs");
+
+  nepPics.style.display =  "flex";
+
+  var picsContainer = document.getElementById("pics");
+  var bigPicsContainer = document.getElementById("bigPics");
+  var gifsContainer = document.getElementById("gifs");
+
+  var url = "";
+  var picsList = [];
+  var bigPicsList = [];
+  var gifsList = [];
+
+  var i;
+  for (i = 1; i < 103; i++){
+    url = "./Components/Images/n" + i + ".png";
+    picsList.push(url);
   }
 
+  for (i = 1; i < 2; i++){
+    url = "./Components/Images/an" + i + ".png";
+    bigPicsList.push(url);
+  }
+  for (i = 1; i < 42; i++){
+    url = "./Components/Gifs/gif" + i + ".gif";
+    gifsList.push(url);
+  }
+
+  var newImages = '';
+
+  for (i = picsList.length - 1; i >= 0; i--){
+    newImages = '<li> <img src="' + picsList[i] + '" alt=""></li>';
+    picsContainer.insertAdjacentHTML('afterbegin', newImages);
+  }
+
+  for (i = bigPicsList.length - 1; i >= 0; i--){
+    newImages = '<li> <img src="' + bigPicsList[i] + '" alt=""></li>';
+    bigPicsContainer.insertAdjacentHTML('afterbegin', newImages);
+  }
+
+  for (i = gifsList.length - 1; i >= 0; i--){
+    newImages = '<li> <img src="' + gifsList[i] + '" alt=""></li>';
+    gifsContainer.insertAdjacentHTML('afterbegin', newImages);
+  }
+
+
+  /*
+  //Loops neptune pics
+  for (i = 1; i < 103; i++){
+    url = "./Components/Images/n" + i + ".png";
+    picList.push(url);
+  }
+  //Loops big nep pics
+  for (i = 1; i < 2; i++){
+    url = "./Components/Images/an" + i + ".png";
+    bigPicList.push(url);
+  }
+
+  for (i = 1; i < 42; i++){
+    url = "./Components/Gifs/gif" + i + ".gif";
+    gifList.push(url);
+  }
+
+  var newImages = '';
+  for (i = picList.length - 1; i >= 0; i--){
+    newImages = '<li> <img src="' + picList[i] + '" alt=""></li>';
+    picsContainer.insertAdjacentHTML('afterbegin', newImages);
+  }
+  */
+}
 //Checks if pics is on
 function togglePics() {
   var nepPics = document.getElementById("NeptunePics");
+  var bigNepPics = document.getElementById("BigNepPics");
 	var nepGifs = document.getElementById("NeptuneGifs");
 	var nepSounds = document.getElementById("NeptuneSounds");
 
-	var isPicsOff = new Boolean(nepGifs.style.display === "none");
+	var isPicsOff = new Boolean(nepPics.style.display === "none");
 
 	nepPics.style.display = isPicsOff ? "flex" : "none";
 	nepGifs.style.display = isPicsOff ? "none" : "none";
 	nepSounds.style.display = isPicsOff ? "none" : "none";
+  bigNepPics.style.display = isPicsOff ? "none" : "none";
 
   var container = document.getElementById("pics");
+  /*
   var url = "";
   var urlList = [];
   var i;
@@ -33,19 +117,57 @@ function togglePics() {
     newImages = '<li> <img src="' + urlList[i] + '" alt=""></li>';
     container.insertAdjacentHTML('afterbegin', newImages);
   }
+  */
+
+
+}
+
+function toggleBigNepPics() {
+  var nepPics = document.getElementById("NeptunePics");
+  var bigNepPics = document.getElementById("BigNepPics");
+	var nepGifs = document.getElementById("NeptuneGifs");
+	var nepSounds = document.getElementById("NeptuneSounds");
+
+	var isBigPicsOff = new Boolean(BigNepPics.style.display === "none");
+
+  nepPics.style.display = isBigPicsOff ? "none" : "none";
+	nepGifs.style.display = isBigPicsOff ? "none" : "none";
+	nepSounds.style.display = isBigPicsOff ? "none" : "none";
+  bigNepPics.style.display = isBigPicsOff ? "flex" : "none";
+
+  /*
+  var container = document.getElementById("bigPics");
+  var url = "";
+  var urlList = [];
+  var i;
+  for (i = 1; i < 2; i++){
+    url = "./Components/Images/an" + i + ".png";
+    urlList.push(url);
+  }
+
+  var newImages = '';
+  for (i = urlList.length - 1; i >= 0; i--){
+    newImages = '<li> <img src="' + urlList[i] + '" alt=""></li>';
+    container.insertAdjacentHTML('afterbegin', newImages);
+  }
+  */
 }
 
 //Checks if gifs is on
 function toggleGifs() {
-	var nepPics = document.getElementById("NeptunePics");
+  var nepPics = document.getElementById("NeptunePics");
+  var bigNepPics = document.getElementById("BigNepPics");
 	var nepGifs = document.getElementById("NeptuneGifs");
 	var nepSounds = document.getElementById("NeptuneSounds");
 
 	var isGifsOff = new Boolean(nepGifs.style.display === "none");
+
 	nepPics.style.display = isGifsOff ? "none" : "none";
 	nepGifs.style.display = isGifsOff ? "flex" : "none";
 	nepSounds.style.display = isGifsOff ? "none" : "none";
+  bigNepPics.style.display = isGifsOff ? "none" : "none";
 
+/*
   var container = document.getElementById("gifs");
   var url = "";
   var urlList = [];
@@ -60,34 +182,45 @@ function toggleGifs() {
     newGifs = '<li> <img src="' + urlList[i] + '" alt=""></li>';
     container.insertAdjacentHTML('afterbegin', newGifs);
   }
+  */
 
 }
 
 //Checks if sounds is on
 function toggleSounds() {
-	var nepPics = document.getElementById("NeptunePics");
+  var nepPics = document.getElementById("NeptunePics");
+  var bigNepPics = document.getElementById("BigNepPics");
 	var nepGifs = document.getElementById("NeptuneGifs");
 	var nepSounds = document.getElementById("NeptuneSounds");
 
 	var isSoundsOff = new Boolean(nepSounds.style.display === "none");
+
 	nepPics.style.display = isSoundsOff ? "none" : "none";
 	nepGifs.style.display = isSoundsOff ? "none" : "none";
 	nepSounds.style.display = isSoundsOff ? "flex" : "none";
+  bigNepPics.style.display = isSoundsOff ? "none" : "none";
+
 }
 </script>
 
 <html>
 	<head>
+    <script> loopImages(); </script>
 		<script src="./Components/JS/Neptune.js" type="text/javascript"></script>
 		<link rel='icon' href='./Components/Images/favicon.ico' type='image/x-icon'/ >
 		<link rel="stylesheet" href="./Components/CSS/Neptune.css">
 		 <title>MyAngelNeptune</title>
 	</head>
 	<body>
+
+    <script>
+      togglePics();
+    </script>
     <ul id="Navbar">
       <li id="logo"><a href="index.html"> <img src="./Components/Images/n728t.png" width=50 height=50></a></li>
       <li id="Neptune"><a href="checkPassword.html">Neptune</a></li>
     </ul>
+
 		<div id="Home">
 			<button class="buttons" onclick="togglePics()">Pics</button>
 				<div class="innerBody" id="NeptunePics">
@@ -95,16 +228,27 @@ function toggleSounds() {
 
           </ul>
 				</div>
+
+      <button class="buttons" onclick="toggleBigNepPics()">Adult Neptune</button>
+        <div class="innerBody" id="BigNepPics">
+          <ul id="bigPics">
+
+          </ul>
+        </div>
+
 			<button class="buttons" onclick="toggleGifs()">Gifs</button>
 				<div class="innerBody" id="NeptuneGifs">
           <ul id="gifs">
 
           </ul>
 				</div>
+
 			<button class="buttons" onclick="toggleSounds()">Sounds</button>
 				<div class="innerBody" id="NeptuneSounds">
 					seyana
 				</div>
+
 		</div>
 	</body>
+    <script> loopImages(); </script>
 </html>

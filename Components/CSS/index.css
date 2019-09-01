@@ -1,5 +1,7 @@
 
 @import "Navbar.css";
+@import "nightMode.css";
+
 
 #Home {
   font-family: "Courier New", Courier, monospace;

@@ -36,3 +36,9 @@
   from{opacity:0;}
   to{opacity: 1;}
 }
+.dark,
+.dark * {
+    background-image: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+}

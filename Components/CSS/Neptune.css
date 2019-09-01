@@ -2,8 +2,6 @@
 
 
 
-
-
 #NeptuneSounds{
   display: none;
   flex-direction: row;
@@ -49,9 +47,46 @@
   color: #474646;
 }
 
+#BigNepPics {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+}
 
-#NeptunePics{
+#bigPics {
+  background: #FCE9FF;
+  color: white;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1vh;
+  margin-bottom: 13vh;
+  border-radius: 105px;
+}
+
+#bigPics li {
+  padding: 0px;
+  width: 25%;
+  background-color: #E0A8F5;
+  display: flex;
+  border-radius: 15vh;
+  align-items: center;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-left: 4%;
+}
+
+#bigPics li img {
+  width: 85%;
+  height: 85%;
+  border-radius: 15vh;
+  padding: 7.5% 7.5%;
+}
+
+#NeptunePics {
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
   width: 75%;
@@ -68,7 +103,7 @@
   border-radius: 105px;
 }
 
-#pics li{
+#pics li {
   padding: 0px;
   width: 25%;
   background-color: #E0A8F5;
@@ -81,13 +116,11 @@
   margin-left: 4%;
 }
 
-#pics li img{
-
+#pics li img {
   width: 85%;
   height: 85%;
   border-radius: 15vh;
   padding: 7.5% 7.5%;
-
 }
 
 #NeptuneGifs {
@@ -127,6 +160,7 @@
   border-radius: 15vh;
   padding: 7.5% 7.5%;
 }
+
 .innerBody{
   position: absolute;
   font-weight: bold;
